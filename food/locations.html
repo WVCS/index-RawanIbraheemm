@@ -29,26 +29,41 @@
  </body>
   
  <style>
-  ul.nav {
-  list-style-type: none;
-  width: 100%
-    position: fixed;
-  top: 
-  left: 0;
-  backround-color: pink;
-  margin: 0;
-  padding: 0;    
+ li.nav {
+  float: right;
+  background-color: pink;
+  display: inline;
 }
-   
-    a{
+li a {
+  display: block;
+  padding: 10px 20px;
   text-decoration: none;
-  color: pink;
-  font-size: 150%
+  color: black;
 }
+
 li a:hover {
-  backround-color: white;
-  fpnt-size: 200%;
-  color: white;
+  background-color: white;
+}
+
+ul.circle {
+  list-style-type: circle;
+  float: right;
+  color: purple;
+}
+
+p {
+  color: #A0522D;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background-color: #c19a6b;
+  top: 0;
 }
 
 h1 {
