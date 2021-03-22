@@ -1,0 +1,150 @@
+ <link rel="icon" href="https://sprinkles.com/sites/default/files/2019-03/Strawberry.png">
+
+<!-- Nav Bar Start-->
+  <ul class="nav">
+     <li class="nav"> <a href="https://wvcs.github.io/index-RawanIbraheemm/food/nationalshipping.html">National Shipping</a></li>
+    <li class="nav"> <a href="https://wvcs.github.io/index-RawanIbraheemm/food/locations.html">Locations</a></li>
+    <li class="nav"> <a href="https://wvcs.github.io/index-RawanIbraheemm/food/catering.html"> Catering & Events </a></li>
+    <li class="nav"> <a href="https://wvcs.github.io/index-RawanIbraheemm/food/bakeshop.html"> Bake Shop </a></li>
+    <li class="nav"> <a href="https://wvcs.github.io/index-RawanIbraheemm/food/Food.html"> Home </a></li>
+  </ul>
+<!-- Nav Bar End-->
+
+<h1> National Shipping
+&#10083; </h1>
+</html>
+ <center>  
+<div class="wrapper">
+  <div class="box header">Send Twinkles cupcakes to yourself or loved ones anywhere in the continental US! Perfect for birthdays, anniversaries, get well, thank you, congratulations or just because!</div>
+  <div class="box sidebar">Dozen Boxes available: You can select a varity of Twinkle cupcakes to go for your special dozen box!</div>
+  <div class="box sidebar2">Want your cupcakes delivered tomorrow? Orders by 1pm ET will ship for next day delivery.  </div>
+  <div class="box content"> This is an example of how your dozen box would look like!
+  <img src= "https://res.cloudinary.com/culturemap-com/image/upload/c_limit,w_980/v1484689834/photos/244346_original_square.png" width="200" height="210">
+  </div>
+  <div class="box footer">How it works: Cupcakes are flash frozen to lock in freshness and require 1-2 hours of thawing upon arrival. We bake fresh daily, so limited quantities are available each day. </div>
+</div>
+   
+   <style>
+     li.nav {
+  float: right;
+  background-color: pink;
+  display: inline;
+}
+li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  background-color: white;
+}
+
+ul.circle {
+  list-style-type: circle;
+  float: right;
+  color: purple;
+}
+
+p {
+  color: black;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background-color: pink;
+  top: 0;
+}
+
+.sidebar {
+		grid-area: sidebar;
+	}
+
+	.sidebar2 {
+		grid-area: sidebar2;
+	}
+
+	.content {
+		grid-area: content;
+	}
+
+	.header {
+		grid-area: header;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	.wrapper {
+		background-color: #c19a6b;
+		color: #444;
+	}
+
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "content"
+     "sidebar2"
+     "footer"
+  }
+
+	@media only screen and (min-width: 500px)  {
+	.wrapper {
+
+		grid-template-columns: 20% auto;
+		grid-template-areas:
+    "header   header"
+		"sidebar  content"
+		"sidebar2 sidebar2"
+		"footer   footer";
+	}
+	}
+
+	@media only screen and (min-width: 600px)   {
+		.wrapper {
+      grid-gap: 30px;
+			grid-template-columns: 180px auto 120px;
+			grid-template-areas:
+      "header  header  header"
+			"sidebar content sidebar2"
+			"footer  footer  footer";
+			max-width: 600px;
+		}
+	}
+
+.box {
+  background-color: gray;
+  color: pink;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; 
+}
+
+.header,
+.footer {
+  background-color: gray;
+}
+
+.sidebar2 {
+  background-color: gray;
+  color: #444;
+}
+h1 {
+  text-align: center;
+}
+h1 {
+  color:#A0522D; 
+  font-size: 45px;
+}
+body {background-color: #c19a6b;} 
+   </style>
