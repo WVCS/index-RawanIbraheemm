@@ -54,26 +54,41 @@ src="image_72192707.JPG" width="550" height="580">
 </html>
     
      <style>    
-  ul.nav {
-  list-style-type: none;
-  width: 100%
-    position: fixed;
-  top: 
-  left: 0;
-  backround-color: purple;
-  margin: 0;
-  padding: 0;    
+  li.nav {
+  float: right;
+  background-color: pink;
+  display: inline;
+}
+li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
 }
 
-a{
-  text-decoration: none;
-  color: purple;
-  font-size: 150%
-}
 li a:hover {
-  backround-color: white;
-  fpnt-size: 200%;
-  color: white;
+  background-color: white;
+}
+
+ul.circle {
+  list-style-type: circle;
+  float: right;
+  color: purple;
+}
+
+p {
+  color: #A0522D;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background-color: #c19a6b;
+  top: 0;
 }
 
 div.sticky {
