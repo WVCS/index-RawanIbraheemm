@@ -22,10 +22,22 @@ href="https://wvcs.github.io/index-RawanIbraheemm/"> More About the Creator </a>
 <body>
   <h1> Museum </h1>
   
-          </body>
+  <center>  
+<div class="wrapper">
+  <div class="box header">Opening September 30, 2021</div>
+  <div class="box sidebar">When it opens, the Academy Museum of Motion Pictures will be the world’s premier institution dedicated to the art and science of movies. Global in outlook and grounded in the unparalleled collections and expertise of the Academy of Motion Picture Arts and Sciences, the Academy Museum will offer unparalleled exhibitions and programs illuminating the fascinating world of cinema. </div>
+  <div class="box sidebar2">They will be immersive and dynamic and will tell the many stories of the movies—their art, technology, artists, history, and social impact—through a variety of diverse and engaging voices.  </div>
+  <div class="box content"> 
+  The Academy Museum will launch a series of virtual conversations, screenings, and education programs. Conceived as digital prologues to the Academy Museum’s core exhibition, Stories of Cinema, these programs will share the varied voices of extraordinary film artists, tell the stories of their inspirations and collaborations, and explore the art, technology, history, and social impact of the movies.
+    <img src= "https://www.oscars.org/sites/oscars/files/styles/hero_image_wide_default/public/rpbw_academy_museum_v3_0.jpg?itok=D6YVkaOl" width="600" height="210">
+  </div>
+  <div class="box footer">The Academy Museum will tell complete stories of moviemaking—celebratory, educational, and sometimes critical or uncomfortable. </div>
+</div>
+ </body>
+  
   
   <style>
-     li.nav {
+    li.nav {
   float: right;
   background-color: #800000;
   display: inline;
@@ -65,9 +77,88 @@ h1 {
   text-align: center;
 }
 h1 {
-  color: black;
+  color: #800000;
   font-size: 45px;
 }
 
-body {background-color:	#A9A9A9;}
+.sidebar {
+		grid-area: sidebar;
+	}
+
+	.sidebar2 {
+		grid-area: sidebar2;
+	}
+
+	.content {
+		grid-area: content;
+	}
+
+	.header {
+		grid-area: header;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	.wrapper {
+		background-color: #A9A9A9;
+		color: #444;
+	}
+
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "content"
+     "sidebar2"
+     "footer"
+  }
+
+	@media only screen and (min-width: 500px)  {
+	.wrapper {
+
+		grid-template-columns: 20% auto;
+		grid-template-areas:
+    "header   header"
+		"sidebar  content"
+		"sidebar2 sidebar2"
+		"footer   footer";
+	}
+	}
+
+	@media only screen and (min-width: 1100px)   {
+		.wrapper {
+      grid-gap: 30px;
+			grid-template-columns: 180px auto 120px;
+			grid-template-areas:
+      "header  header  header"
+			"sidebar content sidebar2"
+			"footer  footer  footer";
+			max-width: 1000px;
+		}
+	}
+
+.box {
+  background-color: gray;
+  color: #800000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; 
+}
+
+.header,
+.footer {
+  background-color: gray;
+}
+
+.sidebar2 {
+  background-color: #585858;
+  color: white;
+}
+
+body {background-color:	#A9A9A9;} 
+    
   </style>
