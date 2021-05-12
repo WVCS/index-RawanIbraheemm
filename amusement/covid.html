@@ -1,1 +1,149 @@
+<body data-new-gr-c-s-check-loaded="14.1007.0" data-gr-ext-installed=""><ul class="nav">
 
+<li class="nav"><a href="olaf.html">Home</a></li>
+   <li class="nav"><a href="social.html">Attractions</a></li> 
+      <li class="nav"><a href="covid.html">Covid-19 Safety Concerns</a></li>
+  </ul>
+<!-- Nav Bar End-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Great Demo on CodePen</title>
+</head>
+<body>
+<br>
+  <h1> Covid-19 Safety Concerns </h1>
+  
+  <center>  
+<div class="wrapper">
+  <div class="box header">We have taken enhanced health and safety measures.</div>
+  <div class="box sidebar">Enhanced Cleaning and Housekeeping Modifications: Cleaning procedures are enhanced throughout Olaf's Land! </div>
+  <div class="box sidebar2">Operational Changes for Physical Distancing:
+Temporary adjustments are in place to promote physical distancing. </div>
+  <div class="box content"> 
+  Reduced Contact: Experiences may be modified in order to reduce contact.
+    <img src= "https://cdn.vox-cdn.com/thumbor/s-VLGgaIxfZ3ijmK9RETcgS6PCs=/0x0:3000x1688/1200x800/filters:focal(1260x604:1740x1084)/cdn.vox-cdn.com/uploads/chorus_image/image/67377052/merlin_815574.0.jpg" width="500" height="600">
+  </div>
+  <div class="box footer">We hope you enjoy your magical frozen experience! </div>
+</div>
+ </body>
+  <style>
+         ul.nav {
+  list-style-type: none;
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: #808080;
+  padding: 10px;
+  margin: 0;
+}
+
+li.nav {
+  display: inline;
+  padding: 20x;
+  margin: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 120%;
+}
+
+li.nav a:hover {
+  background-color: #111;
+  letter-spacing: 2px;
+}
+
+h1 {
+  text-align: center;
+}
+h1 {
+  color: 	#00008B;
+  font-size: 45px;
+}
+
+.sidebar {
+		grid-area: sidebar;
+	}
+
+	.sidebar2 {
+		grid-area: sidebar2;
+	}
+
+	.content {
+		grid-area: content;
+	}
+
+	.header {
+		grid-area: header;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	.wrapper {
+		background-color: #A6C2DB;
+		color: gray;
+	}
+
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "content"
+     "sidebar2"
+     "footer"
+  }
+
+	@media only screen and (min-width: 500px)  {
+	.wrapper {
+
+		grid-template-columns: 20% auto;
+		grid-template-areas:
+    "header   header"
+		"sidebar  content"
+		"sidebar2 sidebar2"
+		"footer   footer";
+	}
+	}
+
+	@media only screen and (min-width: 1100px)   {
+		.wrapper {
+      grid-gap: 30px;
+			grid-template-columns: 180px auto 120px;
+			grid-template-areas:
+      "header  header  header"
+			"sidebar content sidebar2"
+			"footer  footer  footer";
+			max-width: 1000px;
+		}
+	}
+
+.box {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; 
+}
+
+.header,
+.footer {
+  background-color: gray;
+}
+
+.sidebar2 {
+  background-color: gray;
+  color: white;
+}
+
+body {background-color:	#A6C2DB;} 
+  </style>
